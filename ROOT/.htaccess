@@ -1,0 +1,7 @@
+RewriteEngine on
+
+# clean URL for functions 
+RewriteRule ^functions/([a-z]+)$ /index.php?f=$1 [L]
+
+# clean URL for all other 
+RewriteRule ^([a-zA-Z0-9]+)$ /index.php?p=$1

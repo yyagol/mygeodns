@@ -13,7 +13,7 @@ $DB_PASSWORD='mypassword';
 #set the database name 
 $DB_NAME='mygeodns';
 
-if(!$DB_HOST and !$DB_USER and !$DB_PASSWORD and !$DB_NAME)
+if(!$DB_HOST or !$DB_USER or !$DB_PASSWORD or !$DB_NAME)
 {
 	include 'content/no-config.html';
 	die();
